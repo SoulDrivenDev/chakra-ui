@@ -1,36 +1,42 @@
-## 14-10-2021
+## 25-10-2021
 
-`@chakra-ui/react@1.6.10`
+`@chakra-ui/react@1.6.11`
 
-**Radio** `v1.3.11`
+- fix: always use fromEntries polyfill from @chakra-ui/utils #4872
 
-- Add support for styling the container element based on the radio state
+**Gatsby Plugin** `v2.0.2`
 
-**Popover** `v1.8.5`
+- fix(gatsby-plugin): Update peerDependencies
 
-- Fix issue where `computePositionOnMount` didn't work without explict value
+Update `peerDependencies` to include Gatsby 4
 
-**Utils** `v1.8.3`
+**Slider** `v1.4.2`
 
-- Fixed iframe bug on firefox when using `getRelatedTarget` function
-- Fix issue where pan-event utils don't work within iframe
+- Fix issue where sliding on a range slider without focusing sometimes fail.
 
-**Hooks** `v1.6.1`
+**Hooks** `v1.6.2`
 
-- Forward `threshold` options from `usePanSession` to `PanSession` class
+- used useCallbackRef for onOpenProp/onCloseProp in useDisclosure
 
-**Slider** `v1.4.1`
+**System** `v1.7.5`
 
-- Fix issue where value can't be changed when range-slider thumbs are stacked
+- Fixed a bug in `useToken` where it wasn't possible to resolve some tokens which
+  contain dots like `useToken('space','1.5')`. (see #4834)
 
-**Modal** `v1.9.2`
+**Menu** `v1.7.7`
 
-- Fix issue where modal doesn't close when the escape key is pressed and `closeOnOverlayClick` is `false`
+- Fixed an error where the onOpen was called multiple/infinite times
+- Fix issue where computePositionOnMount didn't work without explict value
 
-**Cli** `v1.5.3`
+**Radio** `v1.3.12`
 
-- Fixed an issue where the CLI tokens command exited unexpectedly with: `SyntaxError: Cannot use import statement outside a module`
+- Fix issue where props are duplicated on child label and span elements
+- #4851 Removed aria-readonly from checkbox in favor of wcag 4.1.2
 
-**Checkbox** `v1.5.8`
+**Theme Tools** `v1.2.3`
 
-- Fix issue where `tabIndex` property isn't passed to the underlying input element
+- fix: always use fromEntries polyfill from @chakra-ui/utils #4872
+
+**Utils** `v1.8.4`
+
+- fix: always use fromEntries polyfill from @chakra-ui/utils #4872
